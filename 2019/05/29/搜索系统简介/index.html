@@ -5,15 +5,21 @@
   
 
   
-  <title>Hexo</title>
+  <title>搜索系统简介 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一个基本的搜索引擎系统主要由离线（建库）和在线（检索）两部分构成，离线侧主要完成“网页获取——网页分析——建倒排索引库”的过程，在线侧主要完成“query获取——query处理——与doc进行相关性匹配”的过程。首先给出一个全貌图：  网页获取做过爬虫的人都知道，网页获取实际上就是一个spider的过程，spider通过“抓取网页——分析页面——进网页库——提取链接——抓取网页”的循环过程从互联网">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搜索系统简介">
+<meta property="og:url" content="http://yoursite.com/2019/05/29/搜索系统简介/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一个基本的搜索引擎系统主要由离线（建库）和在线（检索）两部分构成，离线侧主要完成“网页获取——网页分析——建倒排索引库”的过程，在线侧主要完成“query获取——query处理——与doc进行相关性匹配”的过程。首先给出一个全貌图：  网页获取做过爬虫的人都知道，网页获取实际上就是一个spider的过程，spider通过“抓取网页——分析页面——进网页库——提取链接——抓取网页”的循环过程从互联网">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/05/29/搜索系统简介/search_1.png">
+<meta property="og:updated_time" content="2019-05-29T06:02:53.896Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="搜索系统简介">
+<meta name="twitter:description" content="一个基本的搜索引擎系统主要由离线（建库）和在线（检索）两部分构成，离线侧主要完成“网页获取——网页分析——建倒排索引库”的过程，在线侧主要完成“query获取——query处理——与doc进行相关性匹配”的过程。首先给出一个全貌图：  网页获取做过爬虫的人都知道，网页获取实际上就是一个spider的过程，spider通过“抓取网页——分析页面——进网页库——提取链接——抓取网页”的循环过程从互联网">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/29/搜索系统简介/search_1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-搜索系统简介" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-搜索系统简介" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/29/搜索系统简介/" class="article-date">
   <time datetime="2019-05-29T05:58:44.000Z" itemprop="datePublished">2019-05-29</time>
@@ -75,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/29/搜索系统简介/">搜索系统简介</a>
+    <h1 class="article-title" itemprop="name">
+      搜索系统简介
     </h1>
   
 
@@ -98,56 +102,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/14/hello-world/" class="article-date">
-  <time datetime="2019-05-14T09:22:14.279Z" itemprop="datePublished">2019-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/14/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2019/05/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/14/hello-world/" data-id="cjw8tpksk0000ezm1vt0qfa7f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
